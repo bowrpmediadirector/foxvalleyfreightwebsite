@@ -1,84 +1,79 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Team - Fox Valley Freight</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Team • S.M. Transport</title>
+  
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/main.js" defer></script>
+
 </head>
 <body>
+  
+<header class="site-header">
+  <div class="container nav-inner">
+    <a class="logo" href="index.html"><span class="logo-cursive">S.M. Transport</span></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="toggleNav()">☰</button>
+    <nav class="nav" id="primary-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="handbook.html">Employee Handbook</a>
+      <a href="policy.html">Company Policy</a>
+      <a href="careers.html">Careers</a>
+      <a href="events.html">Events</a>
+      <a href="team.html">Team</a>
+    </nav>
+  </div>
+</header>
 
-    <header class="site-header">
-        <div class="container">
-            <a href="index.html" class="logo-link">
-                <span class="logo-text">Fox Valley Freight</span>
-            </a>
+  
+<section class="page-header">
+  <div class="container"><h1 class="page-title">Our Team</h1>
+  <p class="subtitle">Leadership and management keeping S.M. Transport running.</p></div>
+</section>
 
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="handbook.html">Employee Handbook</a></li>
-                    <li><a href="policy.html">Company Policy</a></li>
-                    <li><a href="team.html" class="active">Team</a></li>
-                    <li><a href="careers.html">Careers</a></li>
-                    <li><a href="events.html">Events</a></li>
-                    <li class="dropdown">
-                        <a href="#">Community</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="content.html">Content Creator</a></li>
-                            <li><a href="guidelines.html">Guidelines</a></li>
-                            <li><a href="media.html">Official Media</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<section class="container team-grid">
+  <div class="grid-4">
+    <article class="team-card">
+      <div class="avatar">AB</div>
+      <h3>1 Armed Bandit</h3>
+      <p class="role">Founder & Owner</p>
+      <p>Built S.M. Transport from the ground up; passionate about trucks and community growth.</p>
+    </article>
+    <article class="team-card">
+      <div class="avatar">R</div>
+      <h3>Ryder</h3>
+      <p class="role">Co-owner</p>
+      <p>Oversees logistics and daily operations to keep the fleet moving.</p>
+    </article>
+    <article class="team-card">
+      <div class="avatar">AK</div>
+      <h3>Austin (Kayleigh)</h3>
+      <p class="role">Director of Safety & Server Developer</p>
+      <p>Ensures compliance with the employee handbook and keeps the server stable and safe.</p>
+    </article>
+    <article class="team-card">
+      <div class="avatar">NA</div>
+      <h3>SMT | NecroticAzrael</h3>
+      <p class="role">Management</p>
+      <p>Assists leadership with operations and new driver onboarding.</p>
+    </article>
+  </div>
+</section>
 
-    <main>
-        <section class="hero-section">
-            <div class="container">
-                <h1 class="page-title">Meet Our Leadership Team</h1>
-                <p class="hero-subtitle">The people driving the future of Fox Valley Freight.</p>
-            </div>
-        </section>
+  
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <p>© <span id="year"></span> S.M. Transport LLC — American Truck Simulator VTC</p>
+      <p class="muted">Follow Discord community guidelines & SCS Multiplayer rules in events.</p>
+    </div>
+  </div>
+</footer>
 
-        <section class="team-grid">
-            <div class="container">
-                <article class="team-card">
-                    <h2 class="member-name">1 Armed Bandit</h2>
-                    <h3 class="member-title">Founder & Owner</h3>
-                    <p class="member-bio">Founder of S.M Transport LLC.</p>
-                </article>
-
-                <article class="team-card">
-                    <h2 class="member-name">Ryder</h2>
-                    <h3 class="member-title">Co-owner</h3>
-                    <p class="member-bio">Ryder is essential to our daily operations, ensuring everything runs smoothly. He oversees logistics across all routes, keeping the fleet moving and the business on track.</p>
-                </article>
-
-                <article class="team-card">
-                    <h2 class="member-name">Austin (Kayleigh)</h2>
-                    <h3 class="member-title">Director of Safety & Compliance / Server Developer</h3>
-                    <p class="member-bio">Austin works directly with the ownership team to maintain a safe, friendly, and comfortable server environment. Her role is crucial in ensuring all members comply with community guidelines and the employee handbook.</p>
-                </article>
-
-                <article class="team-card">
-                    <h2 class="member-name">SMT | NecroticAzrael</h2>
-                    <h3 class="member-title">Management</h3>
-                    <p class="member-bio">Working with the leadership team, SMT | NecroticAzrael helps ensure the server operates smoothly. He also provides valuable insight for new drivers interested in joining S.M. Transport LLC.</p>
-                </article>
-            </div>
-        </section>
-    </main>
-
-    <footer class="site-footer">
-        <div class="container">
-            <p>&copy; 2025 Fox Valley Freight. All Rights Reserved.</p>
-        </div>
-    </footer>
-
-    <script src="assets/js/main.js"></script>
 </body>
 </html>

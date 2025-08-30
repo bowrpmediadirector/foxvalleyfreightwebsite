@@ -1,0 +1,1 @@
+S.M. Transport site package. Replace assets/images/hero.jpg with your own image.
