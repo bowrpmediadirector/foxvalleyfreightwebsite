@@ -1,43 +1,67 @@
-<!DOCTYPE html>
-<html lang='en'>
-<head>
-<meta charset='UTF-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1.0'>
-<title>contact</title>
-<link rel='stylesheet' href='css/style.css'>
-</head>
-<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Contact • Trailblazer Transports</title>
+      <meta name="description" content="Trailblazer Transports — American Truck Simulator Virtual Trucking Company (VTC)">
+      <link rel="stylesheet" href="assets/css/style.css">
+      <script src="assets/js/main.js" defer></script>
+    </head>
+    <body>
 
-<header>
-    <div class='container'>
-        <h1 class='logo'>My Professional Website</h1>
-        <nav>
-            <a href='index.html'>Home</a>
-            <a href='about.html'>About</a>
-            <a href='contact.html'>Contact</a>
-        </nav>
-    </div>
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="index.html">Trailblazer Transports</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="toggleNav()">☰</button>
+    <nav class="nav" id="primary-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="handbook.html">Employee Handbook</a>
+      <a href="policy.html">Company Policy</a>
+      <a href="careers.html">Careers</a>
+      <a href="events.html">Events</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
 </header>
 
-<main>
 
-<section class='hero'>
+<section class="page-header">
+  <div class="container">
     <h1>Contact Us</h1>
-    <p>Get in touch using the form below.</p>
-</section>
-<section class='contact'>
-    <form>
-        <input type='text' placeholder='Name' required>
-        <input type='email' placeholder='Email' required>
-        <textarea placeholder='Message' rows='5' required></textarea>
-        <button type='submit'>Send Message</button>
-    </form>
+    <p>Reach out for partnerships, applications, or general inquiries.</p>
+  </div>
 </section>
 
-</main>
-<footer>
-&copy; 2025 My Professional Website
+<section class="container grid-2">
+  <div class="card">
+    <h2>Send a Message</h2>
+    <form class="form" action="#" method="post">
+      <label>Name <input type="text" name="name" required></label>
+      <label>Email <input type="email" name="email" required></label>
+      <label>Message <textarea name="message" rows="4" required></textarea></label>
+      <button class="btn primary" type="submit">Send</button>
+      <p class="form-note">Hook this to your email service or Discord webhook.</p>
+    </form>
+  </div>
+  <div class="card">
+    <h2>Quick Links</h2>
+    <ul>
+      <li>Discord: <em>add your invite</em></li>
+      <li>Email: <em>you@yourvtc.com</em></li>
+      <li>Convoy Planner: <em>posted in #events</em></li>
+    </ul>
+  </div>
+</section>
+
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year"></span> Trailblazer Transports LLC — American Truck Simulator VTC</p>
+    <p class="subtle">This community follows SCS Multiplayer guidelines and Discord Community Guidelines.</p>
+  </div>
 </footer>
-<script src='js/script.js'></script>
-</body>
-</html>
+
+    </body>
+    </html>

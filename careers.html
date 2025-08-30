@@ -1,52 +1,72 @@
-<!DOCTYPE html>
-<html lang='en'>
-<head>
-<meta charset='UTF-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1.0'>
-<title>Careers</title>
-<link rel='stylesheet' href='css/style.css'>
-</head>
-<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Careers • Trailblazer Transports</title>
+      <meta name="description" content="Trailblazer Transports — American Truck Simulator Virtual Trucking Company (VTC)">
+      <link rel="stylesheet" href="assets/css/style.css">
+      <script src="assets/js/main.js" defer></script>
+    </head>
+    <body>
 
-
-
-
-
-
-
-
-<header>
-    <div class='container'>
-        <h1 class='logo'>Fox Valley Fright</h1>
-        <nav>
-            <a href='index.html'>Index</a>
-<a href='about-us.html'>About Us</a>
-<a href='mods.html'>Mods</a>
-<a href='team.html'>Team</a>
-<a href='careers.html'>Careers</a>
-<a href='content-creator.html'>Content Creator</a>
-<a href='guidelines.html'>Guidelines</a>
-<a href='official-media.html'>Official Media</a>
-<a href='freight-we-offer.html'>Freight We Offer</a>
-<a href='events-and-announcements.html'>Events And Announcements</a>
-
-        </nav>
-    </div>
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="index.html">Trailblazer Transports</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="toggleNav()">☰</button>
+    <nav class="nav" id="primary-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="handbook.html">Employee Handbook</a>
+      <a href="policy.html">Company Policy</a>
+      <a href="careers.html">Careers</a>
+      <a href="events.html">Events</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
 </header>
 
 
+<section class="page-header">
+  <div class="container">
+    <h1>Careers</h1>
+    <p>Join Trailblazer Transports as a Driver or apply for staff roles.</p>
+  </div>
+</section>
+
+<section class="container grid-2">
+  <div class="card">
+    <h2>Driver Application</h2>
+    <form class="form" action="#" method="post">
+      <label>Discord Username <input type="text" name="discord" required></label>
+      <label>Steam ID <input type="text" name="steam" required></label>
+      <label>Preferred Timezone <input type="text" name="tz"></label>
+      <label>Experience in ATS (months) <input type="number" name="exp" min="0"></label>
+      <label>Why do you want to join? <textarea name="why" rows="4"></textarea></label>
+      <button class="btn primary" type="submit">Submit</button>
+      <p class="form-note">Tip: Connect this form to Formspree or a Discord webhook in <code>assets/js/main.js</code>.</p>
+    </form>
+  </div>
+
+  <div class="card">
+    <h2>Staff Openings</h2>
+    <ul>
+      <li>Dispatcher</li>
+      <li>Event Coordinator</li>
+      <li>Driver Manager</li>
+      <li>Media / Screenshots</li>
+    </ul>
+    <p>Interested? Use the application form and mention the staff role in your message.</p>
+  </div>
+</section>
 
 
-
-
-
-
-<main>
-<section class='hero'><h1>Careers</h1><p>Content coming soon...</p></section>
-</main>
-<footer>
-&copy; 2025 My Professional Website
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year"></span> Trailblazer Transports LLC — American Truck Simulator VTC</p>
+    <p class="subtle">This community follows SCS Multiplayer guidelines and Discord Community Guidelines.</p>
+  </div>
 </footer>
-<script src='js/script.js'></script>
-</body>
-</html>
+
+    </body>
+    </html>

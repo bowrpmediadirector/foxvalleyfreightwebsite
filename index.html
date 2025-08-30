@@ -1,73 +1,70 @@
-<!DOCTYPE html>
-<html lang='en'>
-<head>
-<meta charset='UTF-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1.0'>
-<title>Home</title>
-<link rel='stylesheet' href='css/style.css'>
-</head>
-<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Home • Trailblazer Transports</title>
+      <meta name="description" content="Trailblazer Transports — American Truck Simulator Virtual Trucking Company (VTC)">
+      <link rel="stylesheet" href="assets/css/style.css">
+      <script src="assets/js/main.js" defer></script>
+    </head>
+    <body>
 
-
-
-
-
-
-
-
-
-<header>
-    <div class='container'>
-        <h1 class='logo'>Fox Valley Fright</h1>
-        <nav>
-            <a href='index.html'>Home</a>
-<a href='about-us.html'>About Us</a>
-<a href='mods.html'>Mods</a>
-<a href='team.html'>Team</a>
-<a href='careers.html'>Careers</a>
-<a href='content-creator.html'>Content Creator</a>
-<a href='guidelines.html'>Guidelines</a>
-<a href='official-media.html'>Official Media</a>
-<a href='freight-we-offer.html'>Freight We Offer</a>
-<a href='events-and-announcements.html'>Events And Announcements</a>
-
-        </nav>
-    </div>
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="index.html">Trailblazer Transports</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="toggleNav()">☰</button>
+    <nav class="nav" id="primary-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="handbook.html">Employee Handbook</a>
+      <a href="policy.html">Company Policy</a>
+      <a href="careers.html">Careers</a>
+      <a href="events.html">Events</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
 </header>
 
 
-
-
-
-
-
-
-
-<main>
-
-<section class='hero'>
-    <h1>Welcome to Fox Valley Frieght</h1>
-    <p>We are a American Truck Simulator VTC(Virtual Truck Compnay) That has been proudly Burnin Diesel Since 2025 and hope you join us in the Journey.</p>
-</section>
-<section class='features'>
-    <div class='feature'>
-        <h2>Late Model trucks</h2>
-        <p>We pride ourselfs with providing all our drivers with Late Model Trucks(Newer model trucks 2023+).</p>
+<section class="hero">
+  <div class="container hero-inner">
+    <h1>Drive with the Best.</h1>
+    <p>Trailblazer Transports is a professional American Truck Simulator VTC focused on realism, community, and clean driving.</p>
+    <div class="cta-row">
+      <a class="btn primary" href="careers.html">Apply as a Driver</a>
+      <a class="btn ghost" href="events.html">View Convoys</a>
     </div>
-    <div class='feature'>
-        <h2>Feature 2</h2>
-        <p>Explain what makes your website unique.</p>
-    </div>
-    <div class='feature'>
-        <h2>Feature 3</h2>
-        <p>Show off another key point or product.</p>
-    </div>
+  </div>
 </section>
 
-</main>
-<footer>
-&copy; 2025 Fox Valley Freight
+<section class="highlights">
+  <div class="container grid-3">
+    <div class="card">
+      <h3>Professional Standards</h3>
+      <p>Clear expectations, clean comms, and courteous driving in every session and convoy.</p>
+      <a class="link" href="handbook.html">Read the Handbook →</a>
+    </div>
+    <div class="card">
+      <h3>Fair & Consistent Policy</h3>
+      <p>Simple rules that respect drivers and keep the roads safe. No drama, just trucking.</p>
+      <a class="link" href="policy.html">Review Company Policy →</a>
+    </div>
+    <div class="card">
+      <h3>Events & Convoys</h3>
+      <p>Weekly convoys, DLC-friendly routes, and optional photo ops for our media page.</p>
+      <a class="link" href="events.html">See Events →</a>
+    </div>
+  </div>
+</section>
+
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year"></span> Trailblazer Transports LLC — American Truck Simulator VTC</p>
+    <p class="subtle">This community follows SCS Multiplayer guidelines and Discord Community Guidelines.</p>
+  </div>
 </footer>
-<script src='js/script.js'></script>
-</body>
-</html>
+
+    </body>
+    </html>
